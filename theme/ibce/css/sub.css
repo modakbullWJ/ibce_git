@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+
+/*서브페이지공통*/
+
+#contents{background:#f4f4f4; min-height:580px; width:100%; padding-top:50px; padding-bottom:50px; font-family:'Spoqa Han Sans';}
+
+.contents_box{width:1200px; margin:0 auto; /*배경색 변경*/ /* background-color:#fff; */}
+
+.page_navi{width:1100px; height:50px; border-bottom-left-radius:15px; border-bottom-right-radius:15px; border-bottom:1px solid #f4f4f4; background:#fff; padding:0 50px;}
+.page_navi p{font-size:12px; line-height:50px; text-align:right;}
+
+.sub_title{width:1100px; height:100px; border-radius:15px; border-bottom:2px dashed #f4f4f4; background:#fff; padding:0 50px; overflow:hidden;}
+.sub_title p{font-size:14px; line-height:100px; text-align:left; font-weight:300; float:left;}
+.sub_title p strong{font-size:40px;}
+.sub_title img{float:right; height:100%; margin-right:-50px;}
+
+.contents_area{width:1100px; height:100%; min-height: 300px; overflow:hidden; border-top-left-radius:15px; border-top-right-radius:15px; background:#fff; padding:50px; position:relative;}
+
+span.sub_middle_bg{width:2000px; height:100px; position:relative; left:50%; margin-left:-1000px;}
+
+
+
+
+
+/*sub1-1 인사말*/
+.sub1-1{font-size:16px; font-family:'Spoqa Han Sans'; line-height:30px;}
+.sub1-1 > strong{font-size:24px; color:#ba9765; display:block; margin-bottom:40px; line-height:34px; letter-spacing:-1px; font-weight:normal;}
+.sub1-1 > p{width:50%; float:left;}
+.sub1-1 > img{float:right; opacity:0.7; width:400px;}
+.sub1-1 > img.watermark{position:absolute; top:0; left:350px; opacity:0.05;}
+
+
+
+/*sub1-3 협력단체*/
+.sub1-3 > img{display:inline-block; margin-right:20px; margin-bottom:20px; border:1px solid #ddd; padding:5px 25px; height:65px;}
+.sub1-3 > img:hover{border:1px solid #d3c6b4;}
+
+
+/*sub2-1 민간등록자격증*/
+.sub2-1 h4{font-size:24px; color:#ba9765; margin-bottom:20px;}
+.sub2-1 table{width:100%; font-size:14px; margin-bottom:40px;}
+.sub2-1 tr{border-bottom:1px dotted #ddd;}
+.sub2-1 tr:last-child{border-bottom:2px solid #f0eeea;}
+.sub2-1 tr:nth-child(1) th{border-top:2px solid #ba9765; height:30px; font-size:16px; background:#f0eeea; padding:0;}
+.sub2-1 th{width:200px; padding:10px 0; font-weight:bold; color:#555; border-right:1px dashed #f0eeea;}
+.sub2-1 td{padding:10px 20px;}
+
+
+
+/*sub2-2 자격기본법*/
+.contents_area div.sub2-2_box{ margin-bottom:50px;}
+.contents_area div.sub2-2_box h4{font-size:16px; color:#ba9765;}
+.contents_area div.sub2-2_box h4 a{display:inline-block; margin-left:5px; font-weight:400; font-size:14px;}
+.contents_area div.sub2-2_box > div{border:1px solid #ccc; width:100%; height:200px;  padding:15px; overflow-y:scroll; font-size:12px; color:#555; font-weight:300; font-family:'NanumGothic'; line-height:16px;}
+
+
+
+/*sub2-3 민간자격제도*/
+#lib_wrap{position:relative; width:100%;}
+#lib_tab > li{width:100%;}
+#lib_tab li h3{float:left; position:absolute; top:0px;  }
+#lib_tab li .lib_tab_ul{float:left; margin-top:60px;}
+.lib1{left:0px;}
+.lib2{left:370px;}
+.lib3{left:740px;}
+
+.lib_tab_ul{width:1060px; border:1px solid #ba9765; border-radius:5px; padding:20px;}
+.lib_tab_ul > li{font-size:14px; border:1px dotted #ddd; padding:30px; margin-bottom:30px;}
+.lib_tab_ul > li:last-child{margin-bottom:0;}
+.lib_tab_ul > li h4{font-size:18px; color:#ba9765; margin-bottom:10px;}
+.lib_tab_ul > li p{font-size:14px; font-weight:400; color:#555; line-height:24px; letter-spacing:-1px; font-family:'Spoqa Han Sans';}
+.lib_tab_ul > li p > strong{font-size:16px; display:block;}
+.lib_tab_ul > li div{background:#f4f4f4; margin-top:10px; padding:20px; font-weight:bold; font-family:'Spoqa Han Sans'}
+.lib_tab_ul > li div ul{overflow:hidden; font-family:'Spoqa Han Sans'}
+.lib_tab_ul > li div ul li{font-size:12px; font-weight:normal; list-style:square; margin:10px 20px; float:left; letter-spacing:0px;}
+
+.lib_tab_ul > li table{border-top:2px solid #ba9765; width:100%;}
+.lib_tab_ul > li th{font-size:14px; color:#bba990; width:15%; text-align:center; padding:5px 0; background:#fafafa; border-bottom:1px solid #eee; font-weight:500;}
+.lib_tab_ul > li td{padding:5px 10px; border-bottom:1px dotted #eee; letter-spacing:-1px; font-weight:400; font-family:'Spoqa Han Sans';  color:#555; line-height:24px;}
+
+.lib_tab_ul > li ul{font-size:14px; font-family:'Spoqa Han Sans'; line-height:24px;}
+.lib_tab_ul > li ul li{ list-style:square; margin-left:20px;}
+
+
+
+/*sub3-1 자격증안내*/
+.sub3-1 table{width:100%; font-size:14px; margin-bottom:40px; border-top:2px solid #ba9765;}
+.sub3-1 tr:nth-child(1) th{ height:30px; font-size:16px; background:#f0eeea; padding:0;}
+.sub3-1 tr{border-bottom:1px dotted #ddd;}
+.sub3-1 th{width:200px; padding:10px 0; font-weight:bold; color:#555; border-right:1px solid #f0eeea;}
+.sub3-1 td{padding:10px 20px; text-align:center; border-right:1px dotted #f0eeea;}
+.sub3-1 tr .txt_L{text-align:left; border-right:0;}
+
+
+/*sub3-2 시험안내*/
+table.exam_guide{width:100%; font-size:16px;  font-family:'Spoqa Han Sans';}
+.exam_guide th{border-top:4px solid #ba9765; text-align:left; font-size:18px; width:200px; margin-right:20px; vertical-align:top; padding:15px 0 30px 10px; color:#ba9765;}
+.exam_guide td{padding-bottom:30px; padding:15px 70px 40px; border-top:1px solid #ddd; line-height:24px; vertical-align:top;}
+.exam_guide td span{display:block; font-size:12px; color:#999;}
+.exam_guide ul{font-size:14px;}
+.exam_guide ul li{float:left; margin-left:8px; margin-top:10px; padding:10px 20px; border-radius:50px;  border-left:1px solid #ddd; border-right:1px solid #ddd; background:#fafafa; font-size:12px;}
+.exam_guide ul li:first-child{margin-left:0;}
+.exam_guide td > a{font-size:16px;}
+.exam_guide td > a.go_form{display:block; background:#555; color:#fff; width:200px; height:30px; line-height:30px; text-align:center; font-weight:bold;}
+.exam_guide td > a.go_form:hover{position:relative; bottom:-1px;}
+
+
+
+
+
+
+
+/* 자격시험 -> 시험접수 뷰페이지*/
+#view_content{margin:auto; width:700px;}
+#view_content > h3{font-size:20px; margin:5px 0 10px 20px;}
+#app_dl { margin-bottom:50px;  background-color: #f4f4f4;}
+.app_dt { background: #5f9be3; color: #fff; float: left; font-weight: bold;
+         margin-right: 20px; padding: 10px; width: 200px; font-size:14px;}
+.app_dd{ margin: 1px 0; padding: 10px 0; font-size:14px;}
+
+
+/* 자격시험 -> 시험접수 쓰기페이지*/
+.container_title_li {font-size: 14px; margin: 10px 0;}
+
+.container_title_li > a:link { color: #fff; }
+
+
+
+/* sub7_1 시험관리 */
+
+h3#sub7_1_h3{font-size: 20px; margin: 0 0 20px 20px; }
+span#sub7_1_span{font-size: 12px;}
+#sub7_1{ width:1000px; min-height:250px ; border-top:1px solid #ba9765; border-bottom:1px solid #ba9765;}
+#sub7_1 > ul { margin: 28px 0 0 10px;}
+li.sub7_1_li_1{margin: 20px 20px;}
+li.sub7_1_li_2{margin:40px 20px;}
+.sub7_1_li_1 > a{ margin: 50px 0 50px 0; font-size: 20px; padding: 15px 20px; border: 0;
+                background: #ba9765; color: #fff; letter-spacing: -0.1em; cursor: pointer;}
+
+.sub7_1_li_2 > a{ font-size: 20px; padding: 15px 32px; border: 0; background: #ba9765; color: #fff;
+                letter-spacing: -0.1em; cursor: pointer;}
+
+ul#sub7_ul_1{margin-left: 300px;}
+
+img.sub7_watermark{ position: absolute;
+    width: 250px; opacity: 0.5;}
+
+/* sub7_2 시험결과조회 */
+
+#exam_list_title{margin-bottom: 20px; }
+#exam_list_title > h3{font-size: 17px;}
+#exam_list{border: 1px solid #ba9765;}
+input#btn_submit_sch{ margin: 30px 20px; padding: 20px 50px; border: 0; background: #ba9765;
+                     font-size: 16px; color: #fff; letter-spacing: -0.1em; cursor: pointer;}
+#exam_list > h3 {margin:50px 20px; font-size: 20px; color: #ba9765;}
+#sub7_2_span {padding: 10px 15px; border: 0; background: #ba9765;
+                     font-size: 15px; color: #fff; letter-spacing: -0.1em;}
+
+img.sub7_2_watermark{ position: absolute;
+    width: 300px; opacity: 0.08; left:500px; top:80px;}
+
+/* 시험신청 뷰페이지 */
+h3#app_view_h3{font-size:16px; margin-bottom: 10px;}
+.tg  {border-collapse:collapse;border-spacing:0; width:700px;}
+.tg td{font-size:14px;padding:10px 5px;overflow:hidden;word-break:normal; border:1px solid;}
+.tg th{font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-yw4l{vertical-align:top; width: 200px; padding:10px;}
+

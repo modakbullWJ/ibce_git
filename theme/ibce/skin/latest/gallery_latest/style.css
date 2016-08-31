@@ -1,0 +1,30 @@
+.n_gallery_wrap {clear:both; width:730px;height:auto;position:relative;overflow:hidden;margin-bottom:20px; border:1px solid #CFDED8;}
+
+
+.n_title_wrap  {width:100%;height:28px;border-bottom:1px solid #E9EAED;}
+.n_title a {float:left; text-decoration:none; padding-left:8px; white-space:nowrap; font-size:15px;font-weight:bold;color:#222; line-height:27px}
+.n_title a:hover {font-size:15px;font-weight:bold;color:#fda850;}
+.n_title img {margin-right: 10px;margin-left: 10px;}
+
+.n_icon {float:left; margin-left:5px; height:19px}
+.n_right_wrap {float:right; padding-top:5px; padding-right:20px}
+ul.n_thumb {margin:0 0 0 5px; padding:10px 0 0 0; list-style:none; font-size:0; white-space:nowrap}
+ul.n_thumb li {float:left; margin-left:12px; margin-bottom:10px; text-align:left;
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+
+}
+/* ul.n_thumb li:hover {float:left; margin-left:12px; margin-bottom:10px; text-align:left;
+  -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+
+} */
+ul.n_thumb li p {padding:4px 0 0 0; width:130px; overflow-x:hidden}
+ul.n_thumb li p a:link, ul.n_thumb li p a:visited, ul.n_thumb li p a:active, ul.n_thumb li p a:hover {text-decoration:none; font:normal 11px dotum, tahoma; color:#555; letter-spacing:-1px; white-space:nowrap}
+.n_no_list {padding:10px 0; font:normal 11px gulim, dotum; color:#777; text-align:center}

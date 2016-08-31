@@ -1,0 +1,26 @@
+v.1.0.2 (15.11.09)
+    : 배추스킨(2.9.8이상) 반응형 지원
+
+    plugin/exam/HISTORY
+    plugin/exam/exam.php
+    plugin/exam/view.skin.php
+    plugin/exam/write.php
+ 
+v.1.0.1 (14.06.06)
+    : 참여가능 레벨 보완, 특정 레벨만 가능 (루시올라님 제안)
+    : 시험문제 모음 페이지 (틴톡님 제안)
+    : 미등록 시험 자동 삭제 오류 수정
+    : 응시자 검색 오류 수정
+
+    plugin/exam/HISTORY
+    plugin/exam/_upgrade.php
+    plugin/exam/answer.php
+    plugin/exam/write.php
+    plugin/exam/list.php
+    plugin/exam/exam.php
+
+v.1.0.0 (13.12.06)
+    : 배포시작 (배추스킨 2.3.4이상)
+
+시험문제 이력 ↑
+
