@@ -16,7 +16,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                             </div>
                             <div class="shor_cut">
                                 <ul>
-                                    <li><a href="<?php echo G5_BBS_URL ?>/register.php" id="snb_join">회원가입</a></li>
+                                    <li><a href="<?php echo G5_BBS_URL ?>/register.php" id="snb_join">JOIN [注册]</a></li>
                                     <!-- <li><a href="<?php //echo G5_BBS_URL ?>/current_connect.php" id="snb_cnt">접속자 <?php //echo connect('theme/basic'); // 현재 접속자수 ?></a></li> -->
                                     <li><a href="<?php echo G5_BBS_URL ?>/qalist.php" id="snb_new">1:1 문의</a></li>
                                 <!--     <li><a href="<?php //echo G5_BBS_URL ?>/faq.php" id="snb_faq">FAQ</a></li> -->
@@ -58,10 +58,10 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                     <li class="mu_title">
                      <button type="button" class="sub_toggle">자격시험</button>
                        <ul class="sub_menu">
-                     <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=sub3_1">자격증 안내</a></li>
+                     <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=sub3_1">자격증 안내 [资格证]</a></li>
                       <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=sub3_2">시험 안내</a></li>
-                      <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=schedule">시험일정 안내 / Schedule </a></li>
-                      <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=application">시험 접수 / Application </a></li>
+                      <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=schedule">시험일정 안내 [考试日程] </a></li>
+                      <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=application">시험 접수 [报名] </a></li>
                       <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=reissue">재발급 신청 / Reissue</a></li>
                         </ul>
                     </li>
@@ -76,9 +76,9 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                     </li>
 
                     <li class="mu_title">
-                         <button type="button" class="sub_toggle">세미나정보</button>
+                         <button type="button" class="sub_toggle">세미나정보 [研讨会]</button>
                       <ul class="sub_menu">
-                          <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=seminar">세미나정보 / Seminar</a></li>
+                          <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=seminar">세미나정보 [研讨会]</a></li>
                       </ul>
                     </li>
 
@@ -107,22 +107,22 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                         <li>
                       <?php if($is_admin){ ?>
                          <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=sub7_1"> 시험 관리</a></li>
-                         <li> <a href="<?php echo G5_BBS_URL ?>/content.php?co_id=sub7_2">결과조회 / Result </a></li>
+                         <li> <a href="<?php echo G5_BBS_URL ?>/content.php?co_id=sub7_2">결과조회 [查询] </a></li>
                         <?php } ?>
-                        <?php if($member['mb_level'] == 2) { ?><li><a id="level_2" href="#">시험응시 / Take an Exam </a></li>
-                        <li><a id="level_2_r" href="#">결과조회 / Result</a></li>
+                        <?php if($member['mb_level'] == 2) { ?><li><a id="level_2" href="#">시험응시 [考试] </a></li>
+                        <li><a id="level_2_r" href="#">결과조회 [查询]</a></li>
                          <?php } ?>
-                         <?php if($member['mb_level'] == 3) { ?><li><a href="<?php echo G5_BBS_URL; ?>/board.php?bo_table=c_2&wr_id=1">Take an Exam [C-2 Class]</a></li>
-                         <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=sub7_2">결과조회 / Result </a></li>
+                         <?php if($member['mb_level'] == 3) { ?><li><a href="<?php echo G5_BBS_URL; ?>/board.php?bo_table=c_2&wr_id=1">시험응시 [考试] C-2 Class</a></li>
+                         <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=sub7_2">결과조회 [查询] </a></li>
                       <?php } ?>
-                      <?php if($member['mb_level'] == 4 ) { ?> <li><a href="<?php echo G5_BBS_URL; ?>/board.php?bo_table=c_1&wr_id=2">Take an Exam [C-1 Class]</a></li>
-                      <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=sub7_2">결과조회 / Result </a></li>
+                      <?php if($member['mb_level'] == 4 ) { ?> <li><a href="<?php echo G5_BBS_URL; ?>/board.php?bo_table=c_1&wr_id=2">시험응시 [考试] C-1 Class</a></li>
+                      <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=sub7_2">결과조회 [查询] </a></li>
                       <?php } ?>
-                      <?php if($member['mb_level'] == 5 ) { ?><li> <a href="<?php echo G5_BBS_URL; ?>/board.php?bo_table=master&wr_id=1">Take an Exam [Master Class]</a></li>
-                      <li>  <a href="<?php echo G5_BBS_URL ?>/content.php?co_id=sub7_2">결과조회 / Result </a></li>
+                      <?php if($member['mb_level'] == 5 ) { ?><li> <a href="<?php echo G5_BBS_URL; ?>/board.php?bo_table=master&wr_id=1">시험응시 [考试] Master Class</a></li>
+                      <li>  <a href="<?php echo G5_BBS_URL ?>/content.php?co_id=sub7_2">결과조회 [查询] </a></li>
                       <?php } ?>
                         <?php if($is_guest){ ?>
-                         <li><a href="<?php echo G5_BBS_URL ?>/login.php">시험 응시</a></li>
+                         <li><a href="<?php echo G5_BBS_URL ?>/login.php">시험 응시 [考试]</a></li>
                          <li><a href="<?php echo G5_BBS_URL ?>/login.php">결과 조회</a></li>
                         <?php } ?>
                       </li>

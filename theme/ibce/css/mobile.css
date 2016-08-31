@@ -364,7 +364,7 @@ img.quick_img {    width: 100%;}
 #footer_notice  {background-color: #333333; height: 50px; width: 100%; float:left; margin-top:5px;}
 #footer_notice a {color:#fff; width:100%; text-decoration: none;}
 .lat_more { position: absolute; top: 17px;  right: 20px;}
-#topbtn{position: fixed;  bottom: 10px;  right: 10px;  border: none;  z-index: 99;}
+#topbtn{position: fixed;  bottom: 10px;  right: 10px;  border: none;  z-index: 99; opacity: 0.8;}
 
 
 
@@ -566,9 +566,9 @@ input#btn_close{ padding: 10px 10px; border: 0; background: #ba9765; color: #fff
 
 #apply_table{min-width: 320px; max-width: 640px; width: 90%; min-height: 400px; height: 100%; margin: auto; }
 #apply_table > ul{ float: left; margin-left: 5px; }
-#apply_table > ul > li{font-size: 12px; background-color: #f7f7f7; margin: 5px; padding: 10px 10px;  color: #484848;}
+#apply_table > ul > li{font-size: 12px; background-color: #f7f7f7; margin: 2px; padding: 5px 10px;  color: #484848;}
 
-ul#ul_secd > li { border-radius:5px;}
+ul#ul_first > li:nth-child(8){padding:13px 10px;}
+
+ul#ul_secd > li { border-radius:5px; padding: 13px 10px;}
 ul#ul_secd > li:nth-child(9){color: red;}
-
-

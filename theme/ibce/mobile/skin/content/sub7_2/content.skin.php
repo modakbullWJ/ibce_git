@@ -22,7 +22,7 @@ include_once(G5_THEME_MOBILE_PATH.'/inc/sub/m_sub_navi.php');
 
 <div id ="exam_list_title">
 
-  <h3>시험결과&nbsp;&nbsp;조회 &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;Inquiring &nbsp;&nbsp;of&nbsp;&nbsp;the&nbsp;&nbsp;Result</h3>
+  <h3>시험결과&nbsp;&nbsp;조회 &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp; 查&nbsp; 询</h3>
 </div>
 
 <div id="exam_list">
@@ -33,9 +33,9 @@ include_once(G5_THEME_MOBILE_PATH.'/inc/sub/m_sub_navi.php');
     <input type="hidden" name="mb_id" value="<?php echo $member['mb_id']; ?>">
 
     <div id="sub7_wrap">
-      <input type="button" name=""  id="btn_submit_sch" class="btn_submit" value="결과&nbsp;&nbsp;조회 &nbsp; / &nbsp;Click&nbsp;&nbsp;to&nbsp;&nbsp;Inquire">
+      <input type="button" name=""  id="btn_submit_sch" class="btn_submit" value="결과&nbsp;&nbsp;조회  / &nbsp;&nbsp;查&nbsp; 询">
 
-      <input type="button" name=""  id="btn_close" class="btn_submit" value="닫기&nbsp; / &nbsp; Close ">
+      <input type="button" name=""  id="btn_close" class="btn_submit" value="닫기&nbsp; /&nbsp; 关&nbsp; 闭  ">
 
   </form>
 
@@ -72,15 +72,15 @@ $('#ul_secd').empty();
 $('#apply_table').slideDown();
 
 // ul_first에 넣을 li태그들
-var a = '<li>' + 'Member code'+ '</li>';
-var b =    '<li>'+'Name'+'</li>';
-var c =  '<li>'+ 'ID' +'</li>';
-var d =    ' <li>'+'E-mail'+'</li>';
-var e =  '<li>'+'Feild'+'</li>';
-var f =  '<li>'+'Subject'+'</li>';
-var g = '<li>'+'Class'+'</li>';
+var a = '<li>' + 'Member code'+'<br>'+' [会员号码]'+ '</li>';
+var b =    '<li>'+'Name '+'<br>'+'[姓名]'+'</li>';
+var c =  '<li>'+ 'ID '+'<br>'+'[账号]' +'</li>';
+var d =    ' <li>'+'E-mail'+'<br>'+' [邮箱]'+'</li>';
+var e =  '<li>'+'Feild '+'<br>'+'[领域]'+'</li>';
+var f =  '<li>'+'Subject '+'<br>'+' [科目]'+'</li>';
+var g = '<li>'+'Class'+'<br>'+'[等级]'+'</li>';
 var h = '<li id="r_date">'+'Getting date'+'</li>';
-var i =  '<li>'+'Result'+'</li>';
+var i =  '<li>'+'Result'+'<br>'+'[结果]'+'</li>';
 
 // append로 넣기
 $('#ul_first').append(  a,b,c,d,e,f,g,h,i );
@@ -115,13 +115,14 @@ $.ajax({
 
           date_result +=  '<li>' + g_date + '</li>';
 
-          $('#r_date').text('Getting Date');
+          $('#r_date').text('[取得日]');
+
         } else{
           var f_date = ab.mb_15;
 
           date_result +=  '<li>' + f_date + '</li>';
 
-          $('#r_date').text('Tried Date');
+          $('#r_date').text('[报名日]');
         }
 
       //  console.log(date_result);

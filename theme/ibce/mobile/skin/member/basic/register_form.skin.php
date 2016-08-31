@@ -38,22 +38,22 @@ include_once(G5_THEME_MOBILE_PATH.'/inc/sub/m_sub_navi.php');
         <caption>사이트 이용정보 입력</caption>
         <tbody>
         <tr>
-            <th scope="row"><label for="reg_mb_id">아이디 / ID<strong class="sound_only">필수</strong></label></th>
+            <th scope="row"><label for="reg_mb_id">★ ID [账号]<strong class="sound_only">필수</strong></label></th>
             <td>
 
                 <span class="frm_info"></span>
-                <input type="text" name="mb_id" value="<?php echo $member['mb_id'] ?>" id="reg_mb_id" <?php echo $required ?> <?php echo $readonly ?> class="frm_input <?php echo $required ?> <?php echo $readonly ?>" minlength="3" maxlength="20">
-                 <button type="button" class="btn_frmline" id ="idcheck">Confirm</button>&nbsp;&nbsp;영문자, 숫자, _ 만 입력 가능. 최소 3자이상 입력하세요. / Only English,number, and _ At least more than 3 letters.
+                <input type="text" name="mb_id" value="<?php echo $member['mb_id'] ?>" id="reg_mb_id" <?php echo $required ?> <?php echo $readonly ?> class="frm_input <?php echo $required ?> <?php echo $readonly ?>" minlength="3" maxlength="20" placeholder="请您输入用户名">
+                 <button type="button" class="btn_frmline" id ="idcheck">확인 [查询]</button><br>영문자, 숫자, _ 만 입력 가능.<br> 최소 3자이상 입력하세요. <br> [请您输入用户名.]
                 <span id="msg_mb_id"></span>
             </td>
         </tr>
         <tr>
-            <th scope="row"><label for="reg_mb_password">비밀번호<br> / Password<strong class="sound_only">필수</strong></label></th>
-            <td><input type="password" name="mb_password" id="reg_mb_password" <?php echo $required ?> class="frm_input <?php echo $required ?>" minlength="3" maxlength="20"> &nbsp;&nbsp;&nbsp;&nbsp; You should type mix two of letter, number, special character. And also type at least 8 letters.</td>
+            <th scope="row"><label for="reg_mb_password">★비밀번호 <br>&nbsp;&nbsp; [密码]<strong class="sound_only">필수</strong></label></th>
+            <td><input type="password" name="mb_password" id="reg_mb_password" <?php echo $required ?> class="frm_input <?php echo $required ?>" minlength="3" maxlength="20"> <br>You should type mix two of letter, number, special character. And also type at least 8 letters.</td>
 
         </tr>
         <tr>
-            <th scope="row"><label for="reg_mb_password_re">비밀번호 확인<br> Password confirm<strong class="sound_only">필수</strong></label></th>
+            <th scope="row"><label for="reg_mb_password_re">★비밀번호 확인<br> [确认密码]<strong class="sound_only">필수</strong></label></th>
             <td><input type="password" name="mb_password_re" id="reg_mb_password_re" <?php echo $required ?> class="frm_input <?php echo $required ?>" minlength="3" maxlength="20"></td>
         </tr>
         </tbody>
@@ -65,7 +65,7 @@ include_once(G5_THEME_MOBILE_PATH.'/inc/sub/m_sub_navi.php');
         <caption>개인정보 입력</caption>
         <tbody>
         <tr>
-            <th scope="row"><label for="reg_mb_name">이름 / Name<strong class="sound_only">필수</strong></label></th>
+            <th scope="row"><label for="reg_mb_name">★ 이름 [姓名]<strong class="sound_only">필수</strong></label></th>
             <td>
                 <?php if ($config['cf_cert_use']) { ?>
                 <span class="frm_info">아이핀 본인확인 후에는 이름이 자동 입력되고 휴대폰 본인확인 후에는 이름과 휴대폰번호가 자동 입력되어 수동으로 입력할수 없게 됩니다.</span>
@@ -110,18 +110,18 @@ include_once(G5_THEME_MOBILE_PATH.'/inc/sub/m_sub_navi.php');
         <?php// }  ?> -->
 
         <tr>
-            <th scope="row"><label for="reg_mb_email">E-mail<strong class="sound_only">필수</strong></label></th>
+            <th scope="row"><label for="reg_mb_email">★ E-mail [邮箱]<strong class="sound_only">필수</strong></label></th>
             <td>
                 <?php if ($config['cf_use_email_certify']) {  ?>
                 <span class="frm_info">
-                    <?php if ($w=='') { echo "E-mail 로 발송된 내용을 확인한 후 인증하셔야 회원가입이 완료됩니다.\n | You have to confirm sent email on your inbox and then you can access your account."; }  ?>
+                    <?php if ($w=='') { echo "E-mail 로 발송된 내용을 확인한 후 인증하셔야 회원가입이 완료됩니다.<br />\n 需要验证通过邮件发送的信息后， 注册完成。"; }  ?>
                     <?php if ($w=='u') { echo "E-mail 주소를 변경하시면 다시 인증하셔야 합니다."; }  ?>
                 </span>
                 <?php }  ?>
                 <input type="hidden" name="old_email" value="<?php echo $member['mb_email'] ?>">
                 <input type="text" name="mb_email" value="<?php echo isset($member['mb_email'])?$member['mb_email']:''; ?>" id="reg_mb_email" required class="frm_input email required" size="70" maxlength="100">
 <!-- 이메일 Confirm -->
-                    <button type="button" class="btn_frmline" id ="emailcheck">Confirm</button>
+                    <button type="button" class="btn_frmline" id ="emailcheck">확인 [查询]</button>
             </td>
         </tr>
 
@@ -139,7 +139,7 @@ include_once(G5_THEME_MOBILE_PATH.'/inc/sub/m_sub_navi.php');
 
         <?php if ($config['cf_use_tel']) {  ?>
         <tr>
-            <th scope="row"><label for="reg_mb_tel">전화번호 / Tel<?php if ($config['cf_req_tel']) { ?><strong class="sound_only">필수</strong><?php } ?></label></th>
+            <th scope="row"><label for="reg_mb_tel">전화번호 <br> [电话号码]<?php if ($config['cf_req_tel']) { ?><strong class="sound_only">필수</strong><?php } ?></label></th>
 
 
 
@@ -165,7 +165,7 @@ include_once(G5_THEME_MOBILE_PATH.'/inc/sub/m_sub_navi.php');
 
         <?php if ($config['cf_use_hp'] || $config['cf_cert_hp']) {  ?>
         <tr>
-            <th scope="row"><label for="reg_mb_hp">휴대폰번호<br> / Cell Phone<?php if ($config['cf_req_hp']) { ?><strong class="sound_only">필수</strong><?php } ?></label></th>
+            <th scope="row"><label for="reg_mb_hp">휴대폰번호<br> [手机号码]<?php if ($config['cf_req_hp']) { ?><strong class="sound_only">필수</strong><?php } ?></label></th>
             <td>
 
 
@@ -189,13 +189,13 @@ include_once(G5_THEME_MOBILE_PATH.'/inc/sub/m_sub_navi.php');
         <?php }  ?>
 
         <tr>
-            <th scope="row"><label for="gr_name">단체명  <br>/ Group Name</label></th>
+            <th scope="row"><label for="gr_name">단체명  <br> [团体名]</label></th>
             <td><input type="text" name="mb_2" value="<?php echo ($member['mb_6']) ?>" id="gr_name" class="frm_input " maxlength="20"></td>
         </tr>
 
 
         <tr>
-            <th scope="row"><label for="gr_num">단체 전화번호 <br>/ Group Number</label></th>
+            <th scope="row"><label for="gr_num">단체 전화번호 <br> [团体电话号码]</label></th>
             <td>
 
                 <select name='gr_ccode' class ="frm_input"  id="gr_ccode">
@@ -216,7 +216,7 @@ include_once(G5_THEME_MOBILE_PATH.'/inc/sub/m_sub_navi.php');
         <?php if ($config['cf_use_addr']) { ?>
         <tr>
             <th scope="row">
-                주소 / Address
+                주소 [地址]
                 <?php if ($config['cf_req_addr']) { ?><strong class="sound_only">필수</strong><?php }  ?>
             </th>
             <td>
@@ -325,7 +325,7 @@ include_once(G5_THEME_MOBILE_PATH.'/inc/sub/m_sub_navi.php');
         <?php }  ?>
 
         <tr>
-            <th scope="row">자동등록방지</th>
+            <th scope="row">★ 자동등록방지 <br> [验证码]</th>
             <td><?php echo captcha_html(); ?></td>
         </tr>
         </tbody>
@@ -333,7 +333,7 @@ include_once(G5_THEME_MOBILE_PATH.'/inc/sub/m_sub_navi.php');
     </div>
 
     <div class="btn_confirm">
-        <input type="submit" value="<?php echo $w==''?'회원가입':'정보수정'; ?>" id="btn_submit" class="btn_submit" accesskey="s">
+        <input type="submit" value="<?php echo $w==''?'회원가입 [立即注册]':'정보수정'; ?>" id="btn_submit" class="btn_submit" accesskey="s">
         <a href="<?php echo G5_URL ?>" class="btn_cancel">cancel</a>
     </div>
     </form>
@@ -591,7 +591,3 @@ $("#emailcheck").click(pw_callback);
 </div> <!-- /.contents_box -->
 
 </div> <!-- /#sub_contents -->
-
-
-
-

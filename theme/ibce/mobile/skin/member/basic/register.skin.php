@@ -13,16 +13,16 @@ include_once(G5_THEME_MOBILE_PATH.'/inc/sub/m_sub_navi.php');
     <p>회원가입약관 및 개인정보처리방침안내의 내용에 동의하셔야 회원가입 하실 수 있습니다.</p>
 
     <section id="fregister_term">
-        <h2>회원가입약관</h2>
+        <h2>회원가입약관 [立即注册 約款]</h2>
         <textarea readonly><?php echo get_text($config['cf_stipulation']) ?></textarea>
         <fieldset class="fregister_agree">
-            <label for="agree11">회원가입약관의 내용에 동의합니다.</label>
+            <label for="agree11">회원가입약관의 내용에 동의합니다.<br>[立即注册 約款 同意]</label>
             <input type="checkbox" name="agree" value="1" id="agree11">
         </fieldset>
     </section>
 
     <section id="fregister_private">
-        <h2>개인정보처리방침안내</h2>
+        <h2>개인정보처리방침안내 [个人信息管理程序]</h2>
          <div class="tbl_head01 tbl_wrap">
             <table>
 
@@ -61,13 +61,13 @@ include_once(G5_THEME_MOBILE_PATH.'/inc/sub/m_sub_navi.php');
             </table>
         </div>
         <fieldset class="fregister_agree">
-            <label for="agree21">개인정보처리방침안내의 내용에 동의합니다.</label>
+            <label for="agree21">개인정보처리방침안내의 내용에 동의합니다.<br>[个人信息管理程序 同意]</label>
             <input type="checkbox" name="agree2" value="1" id="agree21">
         </fieldset>
     </section>
 
     <div class="btn_confirm">
-        <input type="submit" class="btn_submit" value="회원가입">
+        <input type="submit" class="btn_submit" value="회원가입 [立即注册]">
     </div>
 
     </form>
@@ -99,4 +99,3 @@ include_once(G5_THEME_MOBILE_PATH.'/inc/sub/m_sub_navi.php');
 </div> <!-- /.contents_box -->
 
 </div> <!-- /#sub_contents -->
-

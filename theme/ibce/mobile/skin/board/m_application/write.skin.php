@@ -121,10 +121,10 @@ else  $wr_1 = $member["mb_id"];
         <?php } ?>
 
         <tr>
-            <th scope="row"><label for="wr_subject">제목<strong class="sound_only">필수</strong></label></th>
+            <th scope="row"><label for="wr_subject">제목 [题目]<strong class="sound_only">필수</strong></label></th>
             <td>
                 <div id="autosave_wrapper">
-                    <input type="text" name="wr_subject" value="시험 신청 합니다. / To apply for the exam. <?php //echo $subject ?>" id="wr_subject" required class="frm_input required" size="50" maxlength="255">
+                    <input type="text" name="wr_subject" value="시험 신청 합니다. [报名] <?php //echo $subject ?>" id="wr_subject" required class="frm_input required" size="50" maxlength="255">
                     <?php if ($is_member) { // 임시 저장된 글 기능 ?>
                     <script src="<?php echo G5_JS_URL; ?>/autosave.js"></script>
                     <button type="button" id="btn_autosave" class="btn_frmline">임시 저장된 글 (<span id="autosave_count"><?php echo $autosave_count; ?></span>)</button>
@@ -143,7 +143,7 @@ else  $wr_1 = $member["mb_id"];
   <!-- 폼정보 추가 테스트 -->
 
 <tr>
-    <th scope="row"><label for="wr_2">선택분야 (Field)<strong class="sound_only">필수</strong></label></th>
+    <th scope="row"><label for="wr_2">선택분야 [领域]<strong class="sound_only">필수</strong></label></th>
     <td>
     <input type="text" id="wr_2" name="wr_2"  value="뷰티종합" size="10" class ="frm_input required ">
     </td>
@@ -151,14 +151,14 @@ else  $wr_1 = $member["mb_id"];
 
 
 <tr>
-    <th scope="row"><label for="wr_11">선택과목 (Subject)<strong class="sound_only">필수</strong></label></th>
+    <th scope="row"><label for="wr_11">선택과목 [科目]<strong class="sound_only">필수</strong></label></th>
     <td>
     <input type="text" id="" name="wr_11" value="뷰티종합 컨설팅지도사" class ="frm_input required ">
     </td>
 </tr>
 
   <tr>
-    <th scope="row"><label for="wr_content">급수(Class)<strong class="sound_only">필수</strong></label></th>
+    <th scope="row"><label for="wr_content">급수 [等级]<strong class="sound_only">필수</strong></label></th>
     <td>
         <select class ="frm_input" name="wr_content" required >
           <option value="">Select Class</option>
@@ -171,21 +171,21 @@ else  $wr_1 = $member["mb_id"];
 
 
 <tr>
-    <th scope="row"><label for="wr_3">응시지역 (Area)<strong class="sound_only">필수</strong></label></th>
+    <th scope="row"><label for="wr_3">응시지역 [国际]<strong class="sound_only">필수</strong></label></th>
     <td>
         <input type="text" id="wr_3" name="wr_3" value="<?php echo $write['wr_3'] ?>" size="10" class="frm_input required" required>
     </td>
 </tr>
 
 <tr>
-    <th scope="row"><label for="wr_4">이름 (name)<strong class="sound_only">필수</strong></label></th>
+    <th scope="row"><label for="wr_4">이름 [姓名]<strong class="sound_only">필수</strong></label></th>
     <td>
        <input type="text" id="wr_4" name="wr_4" value="<?php echo $member['mb_name']?>" size="10" class ="frm_input required" maxlength="20" required/>
    </td>
 </tr>
 
 <tr>
-    <th scope="row"><label for="hp_num">전화번호(Tell Number)</label></th>
+    <th scope="row"><label for="hp_num">전화번호 <br> [电话号码]</label></th>
     <td>
 
        <input type="text" id="hp_num" name="wr_10" value="<?php echo $member['mb_tel']?>" size="10" class ="frm_input" maxlength="
@@ -212,7 +212,7 @@ else  $wr_1 = $member["mb_id"];
 
 
 <tr>
-    <th scope="row"><label for="hp_num">휴대폰번호(Cell Phone Number)</label></th>
+    <th scope="row"><label for="hp_num">휴대폰번호 <br> [手机号码] </label></th>
     <td>
 
        <input type="text" id="hp_num" name="wr_5" value="<?php echo $member['mb_hp']?>" size="10" class ="frm_input" maxlength="
@@ -239,7 +239,7 @@ else  $wr_1 = $member["mb_id"];
 
 
 <tr>
-    <th scope="row"><label for="e_mail">E-mail</label></th>
+    <th scope="row"><label for="e_mail">E-mail [邮箱]</label></th>
     <td>
         <input type="text" name="wr_6" value="<?php echo $member['mb_email']?>"
         id="e_mail" required class="frm_input email required" size="70" maxlength="100">
@@ -249,7 +249,7 @@ else  $wr_1 = $member["mb_id"];
 
 <?php for ($i=0; $is_file && $i<$file_count; $i++) { ?>
     <tr>
-        <th scope="row">사진(ID Photo) / 证件照<?php //echo $i+1 ?></th>
+        <th scope="row">사진(ID Photo) [证件照]<?php //echo $i+1 ?></th>
         <td>
             <input id="id_photo" accept="image/*" type="file" name="bf_file[]" title="파일첨부 <?php echo $i+1 ?> : 용량 <?php echo $upload_max_filesize ?> 이하만 업로드 가능" class="frm_file frm_input">
             <?php if ($is_file_content) { ?>
@@ -263,14 +263,14 @@ else  $wr_1 = $member["mb_id"];
             <?php } ?>
 
             <tr>
-                <th scope="row"><label for="wr_7">단체명(Group)</label></th>
+                <th scope="row"><label for="wr_7">단체명 [团体名]</label></th>
                 <td>
                 <input type="text" name="wr_7" id="wr_7" value="<?php echo $member['mb_2']?>" class="frm_input" size="20">
                 </td>
             </tr>
 
             <tr>
-                <th scope="row"><label for="wr_8">단체 전화번호(Group Number)</label></th>
+                <th scope="row"><label for="wr_8">단체 전화번호 [团体电话号码]</label></th>
                 <td>
                 <input type="text" name="wr_8" id="wr_8" value="<?php echo $member['mb_3']?>" class="frm_input" size="20">
                    <!--  <strong> 번호를 수정하시려면 우측에 번호 기입 후 수정버튼을 누르세요.</strong>
@@ -371,8 +371,8 @@ else  $wr_1 = $member["mb_id"];
 </div>
 
 <div class="btn_confirm">
-    <input type="submit" value="작성완료" id="btn_submit" accesskey="s" class="btn_submit">
-    <a href="./board.php?bo_table=<?php echo $bo_table ?>" class="btn_cancel">취소</a>
+    <input type="submit" value="작성완료 [完成]" id="btn_submit" accesskey="s" class="btn_submit">
+    <a href="./board.php?bo_table=<?php echo $bo_table ?>" class="btn_cancel">취소 [取消]</a>
 </div>
 </form>
 

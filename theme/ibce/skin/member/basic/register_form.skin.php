@@ -53,8 +53,8 @@ select#tel_ccode {
             <td>
 
                 <span class="frm_info"></span>
-                <input type="text" name="mb_id" value="<?php echo $member['mb_id'] ?>" id="reg_mb_id" <?php echo $required ?> <?php echo $readonly ?> class="frm_input <?php echo $required ?> <?php echo $readonly ?>" minlength="3" maxlength="20">
-                 <button type="button" class="btn_frmline" id ="idcheck">확인 [查询]</button>&nbsp;&nbsp;영문자, 숫자, _ 만 입력 가능. 최소 3자이상 입력하세요. / 请您输入用户名.
+                <input type="text" name="mb_id" value="<?php echo $member['mb_id'] ?>" id="reg_mb_id" <?php echo $required ?> <?php echo $readonly ?> class="frm_input <?php echo $required ?> <?php echo $readonly ?>" minlength="3" maxlength="20" placeholder="请您输入用户名">
+                 <button type="button" class="btn_frmline" id ="idcheck">확인 [查询]</button>&nbsp;&nbsp;영문자, 숫자, _ 만 입력 가능. 최소 3자이상 입력하세요.
                 <span id="msg_mb_id"></span>
             </td>
         </tr>
@@ -344,7 +344,7 @@ select#tel_ccode {
     </div>
 
     <div class="btn_confirm">
-        <input type="submit" value="<?php echo $w==''?'회원가입':'정보수정'; ?>" id="btn_submit" class="btn_submit" accesskey="s">
+        <input type="submit" value="<?php echo $w==''?'회원가입[立即注册]':'정보수정'; ?>" id="btn_submit" class="btn_submit" accesskey="s">
         <a href="<?php echo G5_URL ?>" class="btn_cancel">cancel</a>
     </div>
     </form>

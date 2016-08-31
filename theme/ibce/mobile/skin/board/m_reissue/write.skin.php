@@ -117,7 +117,7 @@ else  $wr_1 = $member["mb_id"];
         <?php } ?>
 
         <tr>
-            <th scope="row"><label for="wr_subject">제목<strong class="sound_only">필수</strong></label></th>
+            <th scope="row"><label for="wr_subject">제목 [题目]<strong class="sound_only">필수</strong></label></th>
             <td>
                 <div id="autosave_wrapper">
                     <input type="text" name="wr_subject" value="재발급신청합니다. / To apply for a reissue <?php //echo $subject ?>" id="wr_subject" required class="frm_input required" size="50" maxlength="255">
@@ -144,7 +144,7 @@ else  $wr_1 = $member["mb_id"];
   <!-- 폼정보 추가 테스트 -->
 
 <tr>
-    <th scope="row"><label for="wr_2">이름<strong class="sound_only">필수</strong></label></th>
+    <th scope="row"><label for="wr_2">이름 [姓名]<strong class="sound_only">필수</strong></label></th>
     <td>
      <input type="text" id="wr_2" name="wr_2" value="<?php echo $member['mb_name']?>" size="10" class ="frm_input required" maxlength="
      20"  />
@@ -152,7 +152,7 @@ else  $wr_1 = $member["mb_id"];
 </tr>
 
 <tr>
-    <th scope="row"><label for="wr_3">전화번호</label></th>
+    <th scope="row"><label for="wr_3">전화번호 [电话号码]</label></th>
     <td>
      <input type="text" id="wr_3" name="wr_3" value="<?php echo $member['mb_tel']?>"  class ="frm_input required" maxlength="
      20"  />
@@ -162,7 +162,7 @@ else  $wr_1 = $member["mb_id"];
 
 
 <tr>
-    <th scope="row"><label for="wr_4">휴대폰번호</label></th>
+    <th scope="row"><label for="wr_4">휴대폰번호 [手机号码]</label></th>
     <td>
      <input type="text" id="wr_4" name="wr_4" value="<?php echo $member['mb_hp']?>" class ="frm_input required" maxlength="
      20" />
@@ -173,7 +173,7 @@ else  $wr_1 = $member["mb_id"];
 
 
 <tr>
-<th scope="row"><label for="wr_content">합격 등급(Passed Class) <strong class="sound_only">필수</strong></label></th>
+<th scope="row"><label for="wr_content">합격 등급 [等级] <strong class="sound_only">필수</strong></label></th>
     <td>
         <select class ="frm_input" name="wr_content" required>
           <option value="<?php echo $member['mb_4']?>"><?php echo $member['mb_4']?></option>
@@ -186,7 +186,7 @@ else  $wr_1 = $member["mb_id"];
 
 
 <tr>
-<th scope="row"><label for="wr_5">합격 분야(Passed Field) <strong class="sound_only">필수</strong></label></th>
+<th scope="row"><label for="wr_5">합격 분야 [领域] <strong class="sound_only">필수</strong></label></th>
     <td>
         <input type="text" id="wr_5" name="wr_5" value="<?php echo $member['mb_5'] ?>" size="10" class ="frm_input required" required>
     </td>
@@ -194,7 +194,7 @@ else  $wr_1 = $member["mb_id"];
 
 
 <tr>
-    <th scope="row"><label for="wr_6">취득일자(Acquisition Date)<strong class="sound_only">필수</strong></label></th>
+    <th scope="row"><label for="wr_6">취득일자 [取得日]<strong class="sound_only">필수</strong></label></th>
 
 
     <td>
@@ -245,7 +245,7 @@ else  $wr_1 = $member["mb_id"];
 </tr>
 
 <tr>
-    <th scope="row"><label for="wr_7">신청일자(Application Date)<strong class="sound_only">필수</strong></label></th>
+    <th scope="row"><label for="wr_7">신청일자 [申請日]<strong class="sound_only">필수</strong></label></th>
     <td>
 
       <input type="text" id="wr_7" name="wr_7" value="<?php echo $member['mb_7']?>" size="10" class ="frm_input required" maxlength="
@@ -352,7 +352,7 @@ else  $wr_1 = $member["mb_id"];
  -->
         <?php if ($is_guest) { //자동등록방지  ?>
         <tr>
-            <th scope="row">자동등록방지</th>
+            <th scope="row">자동등록방지 </th>
             <td>
                 <?php echo $captcha_html ?>
             </td>
@@ -364,8 +364,8 @@ else  $wr_1 = $member["mb_id"];
     </div>
 
     <div class="btn_confirm">
-        <input type="submit" value="작성완료" id="btn_submit" accesskey="s" class="btn_submit">
-        <a href="./board.php?bo_table=<?php echo $bo_table ?>" class="btn_cancel">취소</a>
+        <input type="submit" value="작성완료[完成]" id="btn_submit" accesskey="s" class="btn_submit">
+        <a href="./board.php?bo_table=<?php echo $bo_table ?>" class="btn_cancel">취소 [取消]</a>
     </div>
     </form>
 
@@ -456,4 +456,3 @@ else  $wr_1 = $member["mb_id"];
     </script>
 </section>
 <!-- } 게시물 작성/수정 끝 -->
-

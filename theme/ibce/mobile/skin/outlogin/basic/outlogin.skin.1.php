@@ -15,13 +15,13 @@ add_stylesheet('<link rel="stylesheet" href="'.$outlogin_skin_url.'/style.css">'
         <form name="foutlogin" action="<?php echo $outlogin_action_url ?>" onsubmit="return fhead_submit(this);" method="post" autocomplete="off">
         <fieldset>
             <input type="hidden" name="url" value="<?php echo $outlogin_url ?>">
-            <input type="text" name="mb_id" id="ol_id" placeholder=" 아이디를 입력해주세요" required class="required" maxlength="20">
-            <input type="password" id="ol_pw" name="mb_password" placeholder=" 비밀번호를 입력해주세요" required class="required" maxlength="20">
+            <input type="text" name="mb_id" id="ol_id" placeholder=" 아이디를 입력해주세요 / ID" required class="required" maxlength="20">
+            <input type="password" id="ol_pw" name="mb_password" placeholder=" 비밀번호를 입력해주세요 / Password" required class="required" maxlength="20">
             <div id="ol_svc">
                 <input type="checkbox" id="auto_login" name="auto_login" value="1">
                 <label for="auto_login" id="auto_login_label">자동로그인</label>
             </div>
-            <input type="submit" id="ol_submit" value="로그인">
+            <input type="submit" id="ol_submit" value="LOGIN [登录] ">
             <a href="<?php echo G5_BBS_URL ?>/password_lost.php" id="ol_password_lost">정보찾기</a>
         </fieldset>
         </form>
