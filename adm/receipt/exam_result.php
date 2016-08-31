@@ -98,7 +98,7 @@ $colspan = 15;
       <caption><?php echo $g5['title']; ?> 목록</caption>
       <thead>
         <tr>
-    <!--          <th scope="col">
+           <!-- <th scope="col">
          <label for="chkall" class="sound_only">현재 페이지 전체</label>
             <input type="checkbox" name="chkall" value="1" id="chkall" onclick="check_all(this.form)">
           </th> -->
@@ -139,9 +139,9 @@ $colspan = 15;
           ?>
 
           <tr class="<?php echo $bg; ?>">
-          <!--  <td class="td_chk">
-              <label for="chk_<?php //echo $i; ?> <!--" class="sound_only"><?php //echo $row['mb_id']; ?> <!--/label>
-              <input type="checkbox" name="chk[]" value="<?php //echo $row['mb_id'] ?><!--" id="chk_<?php //echo $i ?><!--">
+           <!-- <td class="td_chk">
+              <label for="chk_<?php //echo $i; ?>" class="sound_only"> <?php //echo $row['ex_id']; ?> </label>
+              <input type="checkbox" name="chk[]" value="<?php// echo $row['ex_id'] ?>" <id="chk_<?php //echo $i ?>">
             </td> -->
             <td class="td_num"><?php echo $row['mb_1'] ?></td>
             <td class="td_num"><?php echo $row['mb_id']; ?></td>
@@ -174,7 +174,7 @@ $colspan = 15;
   </div>
 
   <div class="btn_list01 btn_list">
- <!--    <button type="submit">선택삭제</button> -->
+    <!-- <button type="submit">선택삭제</button> -->
   </div>
 </form>
 

@@ -282,7 +282,7 @@ if ($w == '') {
 
     // 회원님께 메일 발송
     if ($config['cf_email_mb_member']) {
-        $subject = '['.$config['cf_title'].'] 회원가입을 축하드립니다.';
+        $subject = '欢迎光临 International Beauty Cultural Education Association. / ['.$config['cf_title'].'] 회원가입을 축하드립니다.';
 
         // 어떠한 회원정보도 포함되지 않은 일회용 난수를 생성하여 인증에 사용
         if ($config['cf_use_email_certify']) {
