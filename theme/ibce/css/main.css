@@ -11,7 +11,7 @@ body{overflow-x:hidden;}
 
 
 .top{width:1200px; height:37px; margin:0 auto;}
-.top ul.gnb{width:270px; float:right; position:relative; top:7px;}
+.top ul.gnb{width:300px; float:right; position:relative; top:7px;}
 .top ul.gnb li{float:right; margin-left:10px;}
 .top ul.gnb a{font-size:12px; font-weight:300; color:#ba9765; border-radius:4px; border-left:1px solid #dcbd90; border-right:1px solid #dcbd90; border-top:1px solid #ba9765; border-bottom:1px solid #ba9765; display:block; padding:0 3px;}
 .top ul.gnb a:hover{color:#dcbd90; border:1px solid #dcbd90;}
