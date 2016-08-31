@@ -1,5 +1,5 @@
 <?php
-$sub_menu = "110300";
+$sub_menu = "400200";
 include_once('./_common.php');
 
 check_demo();
@@ -16,9 +16,11 @@ if(!$count)
 for($i=0; $i<$count; $i++) {
     $id = $_POST['chk'][$i];
 
-    $sql = " delete from g5_mw_exam_answer where mb_id = '$id' ";
+    $sql = " delete from g5_write_reissue where wr_id = '$id' ";
     sql_query($sql);
 }
 
-goto_url('./test.php?'.$qstr);
+
+
+goto_url('./reissue_list.php?'.$qstr);
 ?>
